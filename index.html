@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>GA Teaching Demo - Ecommerce</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(to right, #f8fafc, #e2e8f0);
+padding:20px;
+margin:0;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* Grid Layout */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+gap:25px;
+}
+
+/* Product Card */
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition: all 0.3s ease;
+position:relative;
+overflow:hidden;
+}
+
+/* Hover Effect */
+.card:hover{
+transform: translateY(-8px);
+box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Subtle Click Effect */
+.card:active{
+transform: scale(0.98);
+}
+
+
+/* Price Styling */
+.card p{
+font-size:18px;
+font-weight:bold;
+color:#2563eb;
+}
+
+/* Button Styling */
+button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+margin-top:15px;
+cursor:pointer;
+border-radius:8px;
+font-weight:bold;
+transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover{
+background:#1e40af;
+transform: translateY(-2px);
+}
+
+/* Button Click */
+button:active{
+transform: scale(0.95);
+}
+
+/* Smooth fade-in animation when cards load */
+.card{
+animation: fadeIn 0.5s ease forwards;
+opacity:0;
+}
+
+@keyframes fadeIn{
+to{
+opacity:1;
+}
+}
+
+</style>
